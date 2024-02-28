@@ -14,6 +14,18 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some common HorizonDroid stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# HorizonDroid
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := false
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_INNERTUNE := true
+TARGET_BUILD_VIMUSIC := true
+
+# Maintainer
+HORIZON_MAINTAINER := UnmoveD
+HORIZON_BUILD_TYPE := OFFICIAL
+
 PRODUCT_NAME := aosp_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
